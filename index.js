@@ -4,4 +4,7 @@ const animate_text = () => {
     // Splits the text into letters
     const str = text.textContent;
     const letters = str.split("");
+
+    // Remove the origin text
+    text.textContent = "";
 }
