@@ -7,4 +7,11 @@ const animate_text = () => {
 
     // Remove the origin text
     text.textContent = "";
+
+    // Warp every letter in a span
+    for (let le of letters) {
+        let newSpan = document.createElement("span");
+        newSpan.textContent = le;
+        text.appendChild(newSpan);
+    }
 }
