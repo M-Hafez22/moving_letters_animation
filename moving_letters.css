@@ -5,3 +5,11 @@
   height: 100vh;
   background: #333;
 }
+
+span {
+  opacity: 0;
+  min-width: 0.25em;
+  transition: transform 500ms ease;
+  transform: translateX(900px);
+  display: inline-block;
+}
