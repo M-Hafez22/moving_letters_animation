@@ -14,4 +14,23 @@ const animate_text = () => {
         newSpan.textContent = le;
         text.appendChild(newSpan);
     }
+
+    let char = 0;
+    let timer = setInterval(onTick, 130);
+
+    function onTick() {
+        const span = text.getElementsByTagName("span")[char];
+        span.classList.add('animate-text');
+        char++;
+        if (char === letters.length) {
+            complete();
+            return;
+        }
+    }
+
+    function complete() {
+        clearInterval(timer);
+        timer = null;
+    }
+
 }
