@@ -13,3 +13,10 @@ span {
   transform: translateX(900px);
   display: inline-block;
 }
+
+span.animate-text {
+  transform: translateX(0px);
+  opacity: 1;
+  color: #49ded9;
+  font-size: 1em;
+}
