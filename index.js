@@ -34,3 +34,5 @@ const animate_text = () => {
     }
 
 }
+
+animate_text();
