@@ -1,6 +1,17 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 * {
   margin: 0;
   padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
@@ -25,4 +36,33 @@ span.animate-text {
   opacity: 1;
   color: #49ded9;
   font-size: 1em;
+}
+
+#source-code {
+  position: absolute;
+  color: #fff;
+  bottom: 0.5em;
+  left: 1em;
+  font-size: 1.5em;
+  overflow: hidden;
+  /*  align items baseline*/
+  display: flex;
+  align-items: baseline;
+}
+#source-code:after {
+  position: relative;
+  content: "Source Code";
+  margin-left: 0.25em;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-6em);
+  transition: all 500ms ease;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#source-code:hover::after {
+  display: inline-block;
+  transform: translateX(0);
+  opacity: 1;
 }
